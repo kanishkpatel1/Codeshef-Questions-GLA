@@ -1,0 +1,21 @@
+r=int(input())
+for i in range(r):
+    (d,c)=map(int,input().split())
+    (a1,a2,a3)=map(int,input().split())
+    (b1,b2,b3)=map(int,input().split())
+    w1=a1+a2+a3
+    w2=b1+b2+b3
+    if(w1<150):
+        wc1=w1+d
+    else:
+        wc1=w1
+    if(w2<150):
+        wc2=w2+d
+    else:
+        wc2=w2
+    wc=wc1+wc2+c
+    wicou=w1+w2+2*d
+    if(wicou>wc):
+        print("YES")
+    else:
+        print("NO")
